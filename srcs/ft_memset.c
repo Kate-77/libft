@@ -9,7 +9,7 @@
 /*   Updated: 2021/11/07 09:49:21 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "../libft.h"
 void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*str1;

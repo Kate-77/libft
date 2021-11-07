@@ -9,7 +9,8 @@
 /*   Updated: 2021/11/07 12:03:42 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "../libft.h"
+/*
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {
 	unsigned int	i;
@@ -19,4 +20,4 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 		i++;
 	
 	return (i);
-}
+}*/

@@ -9,11 +9,10 @@
 /*   Updated: 2021/11/07 13:48:48 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void	*ft_memchr(const void *str, int c, unsigned int n)
+#include "../libft.h"
+void	*ft_memchr(const void *str, int c, size_t n)
 {
 	unsigned char	*str0;
-	int				i;
 
 	str0 = (unsigned char *)str;
 	while (n)
@@ -24,6 +23,8 @@ void	*ft_memchr(const void *str, int c, unsigned int n)
 	}
 	return (0);
 }
+
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -38,3 +39,4 @@ int main () {
 
    return(0);
 }
+*/

@@ -6,10 +6,10 @@
 /*   By: kmoutaou <marvin@.42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:35:54 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/07 09:23:20 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/07 19:29:24 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "../libft.h"
 size_t	ft_strlen(const char *str)
 {
 	int	i;

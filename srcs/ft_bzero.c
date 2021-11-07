@@ -6,10 +6,11 @@
 /*   By: kmoutaou <marvin@.42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:36:10 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/06 15:54:18 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/07 19:45:25 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../libft.h"
 void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*str0;
