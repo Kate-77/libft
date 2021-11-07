@@ -6,7 +6,7 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 17:04:55 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/07 18:12:48 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/07 21:40:47 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../libft.h"
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *str0, const void *str1, size_t n)
 	str0_temp = (char *)str0;
 	str1_temp = (char *)str1;
 	i = 0;
-	while (i < n - 1)
+	while (i + 1 < (int)n)
 	{
 		if (str0_temp[i] != str1_temp[i])
 			return (str0_temp[i] - str1_temp[i]);
