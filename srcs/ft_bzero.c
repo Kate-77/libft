@@ -6,7 +6,7 @@
 /*   By: kmoutaou <marvin@.42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:36:10 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/07 19:45:25 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/08 12:31:00 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ void	ft_bzero(void *str, size_t n)
 	}
 	return ;
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main()
-{
-	char	str[] = "Hello";
-	ft_bzero(str, 3);
-	printf("%s", str);
-	return (0);
-}*/

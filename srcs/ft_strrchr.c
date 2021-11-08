@@ -6,7 +6,7 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 12:14:02 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/07 16:44:07 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/07 21:52:10 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ char	*ft_strrchr(const char *str, int c)
 			ptr = str0;
 		str0++;
 	}
+	if (*str0 == c)
+		return (str0);
 	return (ptr);
 }
