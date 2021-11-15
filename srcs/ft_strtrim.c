@@ -6,7 +6,7 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:48:47 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/15 02:48:10 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/15 17:01:38 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	s2[i] = '\0';
 	return (s2);
-}	
+}
+/*
+#include <stdio.h>
+int	main()
+{
+	char *s1;
+	char *s2;
+
+	s1 = " \t \t \n  \n\n\n\t";
+	s2 = ft_strtrim(s1, " \n\t");
+	printf("%s", s2);
+	return (0);
+}*/

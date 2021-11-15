@@ -6,11 +6,25 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 14:33:32 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/15 03:34:55 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/15 15:52:37 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+
+static int	ft_convert(const char *str, int i, int result, int sign)
+{
+	while (ft_isdigit(str[i]))
+	{
+		if ((((unsigned long)result * 10) + (str[i] - '0')) > (unsigned long)9223372036854775807 && sign > 0)
+	   		return (-1);
+		if ((((unsigned long)result * 10) + (str[i] - '0')) > (unsigned long)9223372036854775807 + 1 && sign <  0)
+			return (0);
+		result = (result * 10) + (str[i] - '0');
+		i++;
+	}
+	return (result * sign);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -31,10 +45,6 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	while (ft_isdigit(str[i]))
-	{
-		result = (result * 10) + (str[i] - '0');
-		i++;
-	}
-	return (result * sign);
+	result = ft_convert(str, i, result, sign);
+	return (result);
 }

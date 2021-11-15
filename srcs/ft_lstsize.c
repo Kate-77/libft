@@ -6,10 +6,10 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 03:17:08 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/15 03:26:22 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/15 14:22:35 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include "../libft.h"
 
 int	ft_lstsize(t_list *lst)
@@ -23,4 +23,4 @@ int	ft_lstsize(t_list *lst)
 	{
 		
 	}
-}
+}*/
