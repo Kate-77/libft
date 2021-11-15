@@ -6,7 +6,7 @@
 /*   By: kmoutaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:48:47 by kmoutaou          #+#    #+#             */
-/*   Updated: 2021/11/08 17:36:33 by kmoutaou         ###   ########.fr       */
+/*   Updated: 2021/11/15 02:48:10 by kmoutaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		start;
 	int		end;
 
-	if (!s1)
-		return (0);
-	if (!set)
+	if (!s1 || !set)
 		return (0);
 	start = ft_checkstart(s1, set);
 	end = ft_checkend(s1, set);
